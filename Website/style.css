@@ -1,0 +1,22 @@
+h1 {
+    color: blue;
+}
+
+p {
+    background-color: palegreen;
+}
+
+body {
+    background-color: paleturquoise;
+    padding: 10;
+    margin: auto;
+    text-align: center;
+    width: 10;
+}
+
+ol ul li {
+    margin: auto;
+    padding: 10;
+    align-self: center;
+    width: 10;
+}
