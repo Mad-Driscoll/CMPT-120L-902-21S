@@ -1,9 +1,6 @@
-userinput = input("Choose a Random Number")
-print("User Entered:", userinput)
+def userinput(x: int):
+  return x
 
-randomNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, int(userinput)]
+y = input("Enter a random integer:")
 
-if type(userinput) == int:
-    print("Please enter a valid integer")
-else:
-    print(sum(randomNumbers))
+print(sum(range(userinput(int(y) + 1))))
