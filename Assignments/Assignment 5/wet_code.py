@@ -12,30 +12,10 @@ def saturdays_bank_transactions(transations) -> Tuple[float, float]:
     savings = 1096.25
     checking = 1590.80
 
-    checking += (transations[0] * 0.85)
-    savings += (transations[0] * 0.15)
+    savings += (transations[0] * 0.15) + (transations[4] * 0.15) + (transations[5] * 0.15)
     
-    checking += transations[1]
-    
-    checking += transations[2]
-    
-    checking += transations[3]
+    checking += (transations[0] * 0.85) + transations[1] + transations[2] + transations[3] + (transations[4] * 0.85) + (transations[5] * 0.85) + transations [6] + transations[7] + transations[8] + transations[9] + transations[10]
 
-    checking += (transations[4] * 0.85)
-    savings += (transations[4] * 0.15)
-    
-    checking += (transations[5] * 0.85)
-    savings += (transations[5] * 0.15)
-
-    checking += transations[6]
-    
-    checking += transations[7]
-    
-    checking += transations[8]
-    
-    checking += transations[9]
-    
-    checking += transations[10]
 
     return checking, savings
 
