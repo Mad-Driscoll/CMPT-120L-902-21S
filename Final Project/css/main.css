@@ -1,0 +1,11 @@
+body {
+    padding: 10;
+    margin: auto;
+    text-align: center;
+    width: 10;
+}
+
+h1 {
+    color: aqua;
+    background-color: blue;
+}
