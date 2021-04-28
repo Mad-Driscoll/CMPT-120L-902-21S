@@ -1,8 +1,20 @@
 def prime_or_composite(number):
-    """
-    - Add code in the defined function to figure out whether or not the given number is a prime number or not. 
 
-    - A prime number (or a prime) is a natural number greater than 1 that is not a product of two smaller natural numbers. A natural number greater than 1 that is not prime is called a composite number. - Wikipedia
+    for i in range(2, int(number//2)): 
+        if number % i == 0 and number > 1: 
+            print("Composite") 
+            break 
+    else: 
+        print ("Prime")
+            
+
+    """
+    - Add code in the defined function to figure out whether or not the given number 
+    is a prime number or not. 
+
+    - A prime number (or a prime) is a natural number greater than 1 that is not a 4
+    product of two smaller natural numbers. A natural number greater than 1 that is 
+    not prime is called a composite number. - Wikipedia
     
     - Take in a parameter called number and return “Prime” or “Composite”
     """

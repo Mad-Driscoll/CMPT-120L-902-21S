@@ -1,5 +1,12 @@
-import random
 def leap_year(year):
+
+    if year % 4 == 0 and not year % 100 == 0:
+        return("Leap year")
+    elif year % 400 == 0 :
+        return("Leap year")
+    else:
+        return("Not a leap year")
+
     """
     - Add code in the defined function to figure out whether or not the given year is a leap year or not. 
     
@@ -11,20 +18,10 @@ def leap_year(year):
     """
     # Write your code here. 
 
-
 if __name__ == "__main__":
     years = [2000, 1994, 1912, 3002, 1700, 1400]
     answers = []
     for year in years:
         answers.append(leap_year(year))
 
-    print("List of Possible Years:", years)
-
-random_year = random.choice(years)
-
-if random_year % 4 == 0 and not random_year % 100 == 0:
-    print(random_year, "is a leap year")
-elif random_year % 400 == 0 :
-    print(random_year, "is a leap year")
-else:
-    print(random_year, "is not a leap year")
+    print(answers)
