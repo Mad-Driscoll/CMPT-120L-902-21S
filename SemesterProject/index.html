@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Madelyn Driscoll Website</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <title>Madelyn Driscoll</title>
+  <link rel="shortcut icon" type="image/jpg" href="templates/assets/logo.jpg"/>
 </head>
 
-<div id="header">
-    <body>
-        <h1>Madelyn Driscoll</h1>
-        <p>Medical Technology Student</p>
-    </body>
-</div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Madelyn Driscoll</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="templates/aboutme.html">About Me</a>
+            <a class="nav-link" href="templates/resume.html">Resume</a>
+            <a class="nav-link" href="templates/gallery.html">Gallery</a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-<div id="main">
-    <body>
-        <h2>Learn more <a href= Templates/aboutme.html> about me!</a></h2>
-        
-    </body>
+  <body>
+    <div class="card bg-dark text-center text-secondary align-self-middle">
+      <img src="templates/assets/background.jpg" class="card-img" alt="Background Image">
+      <div class="card-img-overlay">
+        <h1 class="card-title"> <strong> Madelyn Driscoll </strong> </h1>
+        <h4 class="card-text">Welcome to my Website!</h4>
+        <p class="card-text">Learn more about me and my various adventures!</p>
+      </div>
+    </div>
+</body>
 
-</div>
-
+    <div class="card-footer bg-dark text-center text-secondary">
+      <p class="card-text"> CMPT-120L-901 Final Semester Project </p>
+    </div>
+  
 </html>

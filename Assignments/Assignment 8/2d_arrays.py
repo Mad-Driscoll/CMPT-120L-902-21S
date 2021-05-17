@@ -1,4 +1,18 @@
 def sum_2d_array(two_d_array):
+  
+    ans = []
+    for item in two_d_array:
+
+        sum = 0
+        for num in item:
+
+            sum = sum + num
+
+        ans.append(sum)
+
+    return ans
+        
+
     """
     - Add code in the defined function to sum up the internal arrays. Returning an array of the sums.
     
