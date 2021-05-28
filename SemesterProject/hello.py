@@ -1,30 +1,35 @@
 from flask import Flask
+from flask import logging
 from flask import render_template
 from flask import request
-import logging
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    app.logger.info("Index Page")
-    return ('Index Page')
+    app.logger.info("Flying to the Index Page")
+    return render_template('home.html')
 
 
 @app.route('/aboutme/')
 def aboutme():
-    app.logger.info("About Me Page")
+    app.logger.info("Flying to the About Me Page")
     return render_template('aboutme.html')
 
 @app.route('/gallery/')
 def gallery():
-    app.logger.info("Gallery Page")
+    app.logger.info("Flying to the Gallery Page")
     return render_template('gallery.html')
 
-@app.route('/resume/')
-def resume():
-    app.logger.info("Resume Page")
-    return render_template('resume.html')
+@app.route('/home/')
+def home():
+    app.logger.info("Flying to the Home Page")
+    return render_template('home.html')
+
+@app.route('/contact/')
+def contact():
+    app.logger.info("Flying to the Contact Page")
+    return render_template('contact.html')
 
 
 @app.errorhandler(404)
